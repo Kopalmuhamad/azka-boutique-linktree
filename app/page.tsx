@@ -3,14 +3,15 @@ import Link from "next/link";
 const Home = () => {
   return (
     <div className="relative">
-      <section className="h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-screen" style={{ backgroundImage: "url(/logo1.png)", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section className="w-full h-[35vh] ">
+        <div className="w-[80%] h-full mx-auto" style={{ backgroundImage: "url(/logo-2.jpg)", backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center" }}></div>
       </section>
       <section className="container py-8 px-2 sm:px-0 sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto">
-        <h1 className="text-xl font-bold">Welcome to Azka Boutique</h1>
+        <h1 className="text-xl font-bold">Welcome to Azka Fashion Shop</h1>
         <div className="w-full h-[2px] mt-2 bg-[#333333]" />
         <div className="mt-2">
           <h1>Hallo selamat datang</h1>
-          <p>Untuk konfirmasi ke wa silahkan TAP LOGO whatsapp di bawah pojok kanan 👇🏼</p>
+          <p>Untuk konfirmasi ke wa silahkan TAP LOGO whatsapp di pojok kanan bawah 👇🏼 atau klik Link whatsapp admin</p>
           <ul className="list-disc list-inside mt-5">
             <li>Jika link error bisa di save 62895400976304</li>
             <li>Masuk grup Whatsapp untuk mendapatkan info lebih lanjut tentang product dan jadwal live tiktok kami</li>
@@ -19,10 +20,15 @@ const Home = () => {
             <header className="text-md font-bold">
               Link Grup Whatsapp
             </header>
-            <ul className="mt-5">
+            <ul className="mt-5 space-y-4">
               <li className="w-full border border-[#333333] hover:bg-[#444444] hover:text-[#ffffff] transition-colors py-1 px-2 rounded-md">
                 <Link className="flex w-full" href={'https://chat.whatsapp.com/BDooifRPOv4JXQNuZDmJeG'}>
                   Link GRUP INFO LIVE 1
+                </Link>
+              </li>
+              <li className="w-full border border-[#333333] hover:bg-[#444444] hover:text-[#ffffff] transition-colors py-1 px-2 rounded-md">
+                <Link className="flex w-full" href={'https://wa.me/62895400976304'}>
+                  Link Whatsapp Admin
                 </Link>
               </li>
             </ul>
